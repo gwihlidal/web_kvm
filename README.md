@@ -1,12 +1,19 @@
 # web_kvm
-REST service controller for the rack mountable TESmart 8x8 HDMI matrix switcher hardware
+REST service controller for the rack mountable TESmart 8port HDMI enterprise grade KVM (TES-HKS0801A1U-USBK)
 
-https://www.tesmart.com/collections/hdmi-matrix/products/tesmart-8-inputs-8-outputs-hdmi-matrix-switcher-4k-30hz-8x8-hdmi-matrix-switch-rack-mountable-tcp-ip-rs-232-and-ir-control
+TESmart 8x1 HDMI KVM switch (TES-HKS0801A1U-USBK)
+3840*2160@60Hz 4:4:4
+HDR10 and DolbyVision
+HDCP 2.2
+https://www.newegg.com/p/1DJ-00RG-00030
 
+4 Space (4U) wooden studio equipment rack (STR4U)
 https://www.audiorax.com/audiorax-4-space-straight-rack
 
+US‑16‑XG - fully managed, 16‑port, 10G fiber switch
 https://www.ui.com/unifi-switching/unifi-switch-16-xg/
 
+Pyle USA Multi-Outlet Surge Protect Power Supply (PCO865)
 https://pyleusa.com/products/pco865?variant=32917634187299
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
