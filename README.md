@@ -24,6 +24,8 @@ RUST_LOG=info web_kvm
 ```
 
 ```
+curl -X GET http://localhost:5577/health
+
 curl -X GET http://localhost:5577/current
 
 curl -X POST http://localhost:5577/switch/1
