@@ -54,12 +54,19 @@ async fn main() {
         .and(config_filter.clone())
         .and_then(handlers::current_port_handler);
 
+    let status_route = warp::path!("status")
+        .and(warp::get())
+        .and(config_filter.clone())
+        //.and(warp::query::<Status>())
+        .and_then(handlers::status_handler);
+
     let routes = health_route
         .or(led_mode_route)
         .or(beep_mode_route)
         .or(detect_mode_route)
         .or(switch_port_route)
         .or(current_port_route)
+        .or(status_route)
         .with(warp::cors().allow_any_origin());
 
     warp::serve(routes).run(([0, 0, 0, 0], api_port)).await;
